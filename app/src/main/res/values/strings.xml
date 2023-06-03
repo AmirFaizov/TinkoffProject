@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">News</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="popular_news">Popular News</string>
+    <string name="news">News</string>
+    <string name="TextForItem">Musk invited to UK Parliament to discuss $44 billion Twitter buyout</string>
+    <string name="search">Search</string>
+    <string name="hint_search">Search</string>
+    <string name="source">Read the article</string>
+    <string name="favorites">Favorites</string>
+</resources>

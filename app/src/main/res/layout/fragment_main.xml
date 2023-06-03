@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.MainFragment">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="44dp"
+        android:clipToPadding="false"
+        android:paddingBottom="50dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <ProgressBar
+        android:id="@+id/pag_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?attr/progressBarStyle"
+        android:visibility="invisible"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:subtitleTextAppearance="@style/Theme.News"
+        android:background="@color/grey"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        tools:ignore="MissingConstraints"
+        app:title="@string/news"
+        app:titleTextColor="@color/grayBlack"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
